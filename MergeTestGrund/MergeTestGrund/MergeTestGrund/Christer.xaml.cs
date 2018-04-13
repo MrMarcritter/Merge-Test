@@ -18,9 +18,9 @@ namespace MergeTestGrund
         }
 
 
-        private void Button_OnClicked2(object sender, EventArgs e)
+        private async void Button_OnClicked2(object sender, EventArgs e)
         {
-            DisplayAlert("Placeholder", "Denna knapp ska leda till Timmys sida!", "Ok");
+            await Navigation.PushAsync(new Timmy());
         }
 
         private void Button_OnClicked3(object sender, EventArgs e)

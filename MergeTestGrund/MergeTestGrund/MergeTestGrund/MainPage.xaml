@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MergeTestGrund"
              x:Class="MergeTestGrund.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+    <Button Text="Christer"
+	        Clicked="Button_OnClicked4"/>
+    <Button Text="Marco"
+            Clicked="Button_OnClicked5"/>
+    <Button Text="Timmy"
+            Clicked="Button_OnClicked6"/>
+    </StackLayout>
 
 </ContentPage>

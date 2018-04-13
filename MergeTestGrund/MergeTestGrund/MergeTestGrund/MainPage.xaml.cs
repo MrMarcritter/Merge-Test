@@ -13,5 +13,20 @@ namespace MergeTestGrund
 		{
 			InitializeComponent();
 		}
+
+	    private async void Button_OnClicked4(object sender, EventArgs e)
+	    {
+	        await Navigation.PushAsync(new Christer());
+	    }
+
+	    private void Button_OnClicked5(object sender, EventArgs e)
+	    {
+	        DisplayAlert("OMG", "NO PAGE!%¤%¤", ":(");
+	    }
+
+	    private async void Button_OnClicked6(object sender, EventArgs e)
+	    {
+	        await Navigation.PushAsync(new Timmy());
+	    }
 	}
 }

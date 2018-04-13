@@ -13,7 +13,7 @@ namespace MergeTestGrund
 		{
 			InitializeComponent();
 
-			MainPage = new MergeTestGrund.MainPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

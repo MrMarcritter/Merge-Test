@@ -18,9 +18,9 @@ namespace MergeTestGrund
 		}
 
 
-	    private void Button_OnClicked(object sender, EventArgs e)
+	    private async void Button_OnClicked(object sender, EventArgs e)
 	    {
-	        DisplayAlert("Placeholder", "Denna knapp ska leda till Christers sida", "Ok");
+	        await Navigation.PushAsync(new Christer());
 	    }
 
 	    private void Button_OnClicked1(object sender, EventArgs e)
