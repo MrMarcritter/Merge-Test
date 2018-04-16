@@ -19,9 +19,9 @@ namespace MergeTestGrund
 	        await Navigation.PushAsync(new Christer());
 	    }
 
-	    private void Button_OnClicked5(object sender, EventArgs e)
+	    private async void Button_OnClicked5(object sender, EventArgs e)
 	    {
-	        DisplayAlert("OMG", "NO PAGE!%¤%¤", ":(");
+            await Navigation.PushAsync(new Marco());
 	    }
 
 	    private async void Button_OnClicked6(object sender, EventArgs e)
