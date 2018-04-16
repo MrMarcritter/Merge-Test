@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridTest"
+             x:Class="GridTest.MainPage"
+             Title="Grid Test"
+             BackgroundColor="Black">
+
+    <ContentPage.ToolbarItems>
+        
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+    <Grid RowSpacing="20" ColumnSpacing="20" Margin="10, 20, 10, 10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackLayout Spacing="0" Grid.Row="0" Grid.Column="0">
+            <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+            </StackLayout.GestureRecognizers>
+            <Image HeightRequest="50" BackgroundColor="CornflowerBlue" Source="ppl.png" />
+            <Label HeightRequest="50" TextColor="Black" BackgroundColor="White" FontSize="20" Text="People" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Spacing="0" Grid.Row="0" Grid.Column="1">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped1" />
+            </StackLayout.GestureRecognizers>
+            <Image HeightRequest="50" BackgroundColor="Orange" Source="globe.png" />
+            <Label HeightRequest="50" TextColor="Black" BackgroundColor="White" FontSize="20" Text="OnBoarding" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Spacing="0" Grid.Row="1" Grid.Column="0">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped2"/>
+            </StackLayout.GestureRecognizers>
+            <Image HeightRequest="50" BackgroundColor="Aquamarine" Source="schedule.png"/>
+            <Label HeightRequest="50" TextColor="Black" BackgroundColor="White" FontSize="20" Text="Placeholder" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        </StackLayout>
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" Text="Placeholder" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+    </ScrollView>
+
+</ContentPage>
