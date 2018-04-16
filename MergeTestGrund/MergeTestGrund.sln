@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTestGrund.Android", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTestGrund.iOS", "MergeTestGrund\MergeTestGrund.iOS\MergeTestGrund.iOS.csproj", "{8A17F93D-30A3-4044-B8F3-E3CABC59951B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTestGrund", "MergeTestGrund\MergeTestGrund\MergeTestGrund.csproj", "{0A601B46-AB3F-4B4E-B10A-F196474A6A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeTestGrund", "MergeTestGrund\MergeTestGrund\MergeTestGrund.csproj", "{0A601B46-AB3F-4B4E-B10A-F196474A6A5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
